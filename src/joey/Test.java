@@ -37,7 +37,7 @@ public class Test {
 
     }
 
-    public static void ConfigParse(String path,String outpath) {
+    public static ArrayList<ConfigBean> ConfigParse(String path, String outpath) {
         File file = new File(path);
         BufferedReader reader = null;
         String configType = null;
@@ -160,7 +160,7 @@ public class Test {
             e.printStackTrace();
         }
 
-
+        return configs;
     }
 
     public static void FirewallConfigParse2(String path) {
